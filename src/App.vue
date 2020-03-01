@@ -1,54 +1,67 @@
 <template>
   <div id="app">
       <transition name="fade" mode="out-in">
-      <section key="intro" class="fullScreenCenter flexCenter" v-if="!interaction">
+      <section key="intro" class="centerflex" v-if="!interaction">
         <img class="rings" @click.prevent="playSound()" src="@/assets/imgs/rings.gif" alt="">
       </section>
       
       <div key="main" v-else>
-        <section class="flex fullScreen">
             <section class="gridCont">
 
-              <header class="desktopHide">
-                <img class="headerimg" src="@/assets/imgs/wta-icon.jpg" alt="">
+              <header class="headerText">
+                <h1>
+                  WELCOME TO AMARA
+                </h1>
               </header>
-
-              <header class="mobileHide gridHeader">
-                WELCOME TO AMARA
-              </header>
-
 
               <section class="aboutAmara">
 
-                <h1>A Dungeon World Dramatic Performance Podcast</h1>
+                <header class="headerImage">
+                  <img src="@/assets/imgs/wta-icon.jpg" alt="">
+                </header>
+
+                <h2>A Dungeon World Dramatic Performance Podcast</h2>
 
                     <p>
-                    “Welcome to Amara” is a high production dramatic retelling of a play by post campaign. We are Sean and Andy, a GM/Player duo exploring the unique world of Amara. Amara is a sword and sorcery realm with carefully crafted lore to uncover, and a growing cast of diverse characters.
+                    “Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are <strong><em>Sean and Andy</em></strong>, a GM/Player duo exploring the unique high fantasy world of Amara.
                     </p>
+
+                      <img src="@/assets/imgs/amaranmap.png"/>
+
                     <p>
-                    The storyline follows the main character Ydna, a traveling bard caught up in a flurry of proving grounds quests from his Coterie captain, Orric. Ydna is a curious drifter, who’s joined Eyien’s co-op militia, “The Coterie”.
+                    Amara is a sword and sorcery realm with carefully crafted lore to uncover, featuring a growing cast of diverse characters of beasts and fast friends.
                     </p>
+
+                    <section class="imageFlex diptych">
+                      <img src="@/assets/imgs/banditspink.jpg"/>
+                      <img src="@/assets/imgs/goblinspink.jpg"/>
+                    </section>
+
                     <p>
-                    Along the way we discover much about Amara and the city of Eyien, uncover secrets that threaten the kingdom, and piece together the mysterious forces surrounding Eyien.
+                    The storyline follows the main character Ydna, a traveling bard caught up in a flurry of proving grounds quests from his captain, Orric. Ydna is a curious drifter, who’s joined Eyien’s co-op militia, “The Coterie”.
+                    Above all else he's on a bardic journey to honor his grandfather, hoping to meet exemplary figures and experience all the realm of Amara has to offer recording most, but not all, in his <em>songbook.</em>
+                    </p>
+
+                      <img src="@/assets/imgs/arri.png"/>
+                  
+                    <p>
+                    Along the way we discover much about Amara and the city of Eyien, uncover secrets that threaten the kingdom, and piece together the mysterious forces surrounding this grand city of opportunity and potential.
                     </p>
 
                 <h2>Season 1 Arriving Mid 2020</h2>
               </section>
 
               <section class="discordLink"> 
-                <p class="center">
-                  Join our discord server for early access. 
-                  <br class="desktopHidden"/>
-                  <br class="desktopHidden"/>
-                  Listen to the podcast before it airs, and help us shape the future of "Welcome to Amara"
-                </p>
+                <p>
                 <a href="https://discord.gg/82GpmYD">
                   <img src="@/assets/imgs/discord.png" alt="discord icon - click to join our discord">
                 </a>
+                  Click the icon to join our growing discord server for early access. 
+                </p>
+                <p>
+                  Listen to the podcast before it airs, and help us shape the future of "Welcome to Amara".
+                </p>
               </section>
-
-              <aside class="aside">
-              </aside>
 
               <footer class="footer">
 
@@ -67,14 +80,24 @@
                   </a>
                 </section>
 
-                <section class="legal">
-                  "Welcome to Amara" is a product of "Misuse of Mana LLC" &copy; | No portion of this website or the content it represents may be reproduced in any 
-                  manner whatsoever without the express permission from the authors, except in the case of short excerpts used for review. | <a href="http://www.seanyager.com" target="_blank"> seanyager.com </a> | Site Updated Feb 2020 
-                </section>
               </footer>
+
+              <section class="legal">
+                  "Welcome to Amara" is a product of "Misuse of Mana LLC" &copy; | No portion of this website or the content it represents may be reproduced in any 
+                  manner whatsoever without the express permission from the authors, except in the case of short excerpts used for review. 
+                  | <a href="http://www.seanyager.com" target="_blank"> seanyager.com </a> | Site Updated Feb 2020 
+                  <br>
+                  <br>
+                    Special thank you to freesound.org user <a href="https://freesound.org/people/alanmcki/" target="_blank">alanmcki</a> and the website <a href="https://www.purple-planet.com/" target="_blank">purple-planet.com</a> for providing audio.
+                </section>
+
+                <section class="footerRings">
+                  <img class="runish" src="@/assets/imgs/runish.png" alt="a message from beyond the veil">
+                  <img class="smallRings" src="@/assets/imgs/rings.gif" alt="rings that mark a criminal of Eyien">
+                </section>
               
             </section>
-        </section>
+        
 
         <section class="witchMagic">
           <!-- <img src="@/assets/imgs/witchcraft.gif" alt=""> -->
@@ -87,27 +110,30 @@
 <script>
 
 import "@/assets/styles/global.css";
-import "@/assets/styles/desktop.css";
-import "@/assets/styles/tablet.css";
-import "@/assets/styles/mobile.css";
+import "@/assets/styles/default.css";
+import "@/assets/styles/mobileport.css";
+// import "@/assets/styles/tablet.css";
+// import "@/assets/styles/tabletland.css";
+// import "@/assets/styles/desktop.css";
+
 import "@/assets/styles/transitions.css";
 
 
 
 export default {
-  name: 'Welcome to Amara',
+  name: 'welcomeToAmara',
   title: 'WtA',
   components: {
   },
   data() {
     return {
-      interaction: false,
+      interaction: true,
     }
   },
   methods: {
     playSound() {
         this.interaction = !this.interaction;
-          var waveaudio = new Audio(require('@/assets/audio/wave.wav'));
+          var waveaudio = new Audio(require('@/assets/audio/magicPortal.wav'));
           waveaudio.play();
           this.playMusic();
     },
@@ -116,7 +142,7 @@ export default {
         var audio = new Audio(require('@/assets/audio/introspection.wav'));
         audio.loop = true;
         audio.play();
-      }, 4000 );
+      }, 5000 );
     }
   }
 }

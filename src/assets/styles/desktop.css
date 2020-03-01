@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+/* Desktop CSS */
 
 body {
     margin:0;
@@ -28,7 +27,7 @@ h2 {
     margin:5px 0px;
 }
 
-a{
+a {
     cursor: pointer;
     margin:0;
     color:var(--main-color);
@@ -188,13 +187,3 @@ a:hover {
     background-size: 700px;
     background-repeat: repeat-x;
 }
-
-
-
-
-
-
-
-
-
-

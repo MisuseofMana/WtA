@@ -1,7 +1,7 @@
-/* Breakpoint 768px - For displays less than 786px width */
+/* Breakpoint 992px - For displays less than 992px width */
 /* Tablet Portrait Displays */
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     body {
         margin:0;
         padding:0;

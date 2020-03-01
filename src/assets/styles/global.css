@@ -1,7 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap');
 
 :root {
-    --background: rgba(255,255,255,.1);
+    --background: rgba(37, 35, 35, .7);
     --main-color:  rgb(255, 0, 128);
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-image:url('../imgs/background.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+#app {
+    height:100vh;
+    width:90vw;
+    margin:20px auto;
+}
+
+a {
+    cursor: pointer;
+    margin:0;
+    color:var(--main-color);
+}
+
+a:visited {
+    color:var(--main-color);
+}
+
+a:hover {
+    color:rgb(225, 0, 255);
+}
+
+.centerText {
+    text-align:center;
+}
+
+.centerflex {
+    display: flex;
+    height:inherit;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageFlex {
+      display:flex;
+      justify-content: space-evenly;
+  }
+
+  .diptych img {
+      width:150px;
+  }
+
+  .triptych img {
+    width:100px;
+  }
+
+  .witchMagic {
+    z-index:-999;
+    width:100%;
+    height:300px;
+    position:fixed;
+    bottom:-104px;
+    background-image:url('../imgs/witchcraft.gif');
+    background-blend-mode: screen;
+    opacity:1;
+    background-size: 700px;
+    background-repeat: repeat-x;
 }

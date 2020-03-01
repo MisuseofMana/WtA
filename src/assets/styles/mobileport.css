@@ -1,0 +1,137 @@
+/* Breakpoint 480px - For displays less than 480px */
+/* Mobile Landscape Displays */
+
+@media (min-width: 480px) {
+
+    p {
+
+        margin:10px 0px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    h1 {
+        font-size:50px;
+        font-family: 'East Sea Dokdo', sans-serif;
+        font-weight:1000;
+        margin:0px;
+        text-align:center;
+    }
+    
+    h2 {
+        text-align:center;
+        font-size:20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin:5px 0px;
+    }
+    
+    .rings {
+        height:300px;
+        width:300px;
+        cursor: pointer;
+    }
+    
+    .gridCont {
+        display:block;
+        width:100%;
+    }
+    
+    .headerText {
+        display:block;
+        color:var(--main-color);
+        padding:20px;
+        background:var(--background);
+    }
+    
+    .headerImage {
+        display:block;
+        width:90%;
+        margin:0 auto;
+    }
+
+    .headerImage img {
+        width:100%;
+    }
+
+    .aboutAmara{
+      padding:20px;
+      background: var(--background);
+      font-size:18px;
+      font-family: 'Roboto Condensed', sans-serif;
+      color:var(--main-color);
+      margin:20px 0;
+
+    }
+    .aboutAmara h1 {
+        width:100%;
+        max-width:469px;
+        margin:0 auto;
+    }
+    .aboutAmara img {
+        max-width:300px;
+        margin:20px 0px;
+    }
+    
+    .discordLink {
+        display:block;
+        background: var(--background);
+        margin:20px 0;
+        padding:20px;
+        color:var(--main-color);
+    }
+
+    .discordLink p {
+        padding:0px 20px;
+        font-size:20px;
+    }
+    
+    .discordLink a {
+        display:block;
+        margin:20px auto;
+        width:150px;
+    }
+    
+    .discordLink img {
+        width:150px;
+    }
+    
+    .footer {
+        padding:10px;
+        margin-bottom:20px;
+        background: var(--background);
+    }
+
+    .socialIcons {
+        margin:10px;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .footer img {
+        width:50px;
+        height:50px;
+    }
+
+    .legal{
+        background:var(--background);
+        z-index:999;
+        text-align:center;
+        font-size:8px;
+        display:block;
+        margin-bottom:20px;
+        padding:20px;
+        color:var(--main-color);
+        font-family:"Roboto Condensed", sans-serif;
+    }
+
+    .runish {
+        width:100%;
+    }
+
+    .smallRings {
+        display:block;
+        width:200px;
+        height:200px;
+        margin:0 auto;
+    }
+}
