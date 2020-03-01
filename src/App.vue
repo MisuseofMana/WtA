@@ -86,7 +86,10 @@
 
 <script>
 
-import "@/assets/styles/globals.css";
+import "@/assets/styles/global.css";
+import "@/assets/styles/desktop.css";
+import "@/assets/styles/tablet.css";
+import "@/assets/styles/mobile.css";
 import "@/assets/styles/transitions.css";
 
 
