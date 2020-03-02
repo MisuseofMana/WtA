@@ -22,50 +22,56 @@
 
                 <h2>A Dungeon World Dramatic Performance Podcast</h2>
 
+                  <hr class="amaraHR">
+
                     <p>
                     “Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are <strong><em>Sean and Andy</em></strong>, a GM/Player duo exploring the unique high fantasy world of Amara.
+                      <img class="floatL" src="@/assets/imgs/amaranmap.png"/>
                     </p>
 
-                      <img src="@/assets/imgs/amaranmap.png"/>
 
                     <p>
                     Amara is a sword and sorcery realm with carefully crafted lore to uncover, featuring a growing cast of diverse characters of beasts and fast friends.
                     </p>
 
-                    <section class="imageFlex diptych">
-                      <img src="@/assets/imgs/banditspink.jpg"/>
-                      <img src="@/assets/imgs/goblinspink.jpg"/>
-                    </section>
 
                     <p>
                     The storyline follows the main character Ydna, a traveling bard caught up in a flurry of proving grounds quests from his captain, Orric. Ydna is a curious drifter, who’s joined Eyien’s co-op militia, “The Coterie”.
-                    Above all else he's on a bardic journey to honor his grandfather, hoping to meet exemplary figures and experience all the realm of Amara has to offer recording most, but not all, in his <em>songbook.</em>
+                      <img class="mobileHide floatR" src="@/assets/imgs/banditspink.jpg"/>
+                    Above all else he's on a bardic journey to honor his grandfather, hoping to meet exemplary figures and experience all the realm of Amara 
+                    has to offer recording most, but not all, in his <em>songbook.</em>
                     </p>
 
-                      <img src="@/assets/imgs/arri.png"/>
-                  
+                    <img class="floatL" src="@/assets/imgs/goblinspink.jpg"/>
+
                     <p>
                     Along the way we discover much about Amara and the city of Eyien, uncover secrets that threaten the kingdom, and piece together the mysterious forces surrounding this grand city of opportunity and potential.
                     </p>
 
-                <h2>Season 1 Arriving Mid 2020</h2>
+                      <img class="tabletHide mobileHide" src="@/assets/imgs/arri.png"/>
+
+                      <br>
+
+                      <h2>Season 1 Arriving Mid 2020</h2>
               </section>
 
-              <section class="discordLink"> 
-                <p>
+              <section class="clearB discordLink"> 
                 <a href="https://discord.gg/82GpmYD">
                   <img src="@/assets/imgs/discord.png" alt="discord icon - click to join our discord">
                 </a>
+
+                <section>
+                <p>
                   Click the icon to join our growing discord server for early access. 
                 </p>
                 <p>
                   Listen to the podcast before it airs, and help us shape the future of "Welcome to Amara".
                 </p>
+                </section>
               </section>
 
               <footer class="footer">
 
-                <section class="socialIcons"> 
                   <a href="http://www.twitter.com/misuseofmana" target="_blank">
                     <img src="@/assets/imgs/twitter.png" alt="twitter icon">
                   </a>
@@ -78,7 +84,6 @@
                   <a target="_blank" href="https://discord.gg/82GpmYD">
                     <img src="@/assets/imgs/discord.png" alt="discord icon - click to join our discord">
                   </a>
-                </section>
 
               </footer>
 
@@ -98,10 +103,7 @@
               
             </section>
         
-
-        <section class="witchMagic">
-          <!-- <img src="@/assets/imgs/witchcraft.gif" alt=""> -->
-        </section>
+        <section class="witchMagic"></section>
       </div>
       </transition>
   </div>
@@ -110,11 +112,10 @@
 <script>
 
 import "@/assets/styles/global.css";
+
 import "@/assets/styles/default.css";
 import "@/assets/styles/mobileport.css";
-// import "@/assets/styles/tablet.css";
-// import "@/assets/styles/tabletland.css";
-// import "@/assets/styles/desktop.css";
+import "@/assets/styles/tablet.css";
 
 import "@/assets/styles/transitions.css";
 
@@ -127,7 +128,7 @@ export default {
   },
   data() {
     return {
-      interaction: true,
+      interaction: false,
     }
   },
   methods: {
