@@ -16,39 +16,36 @@
 
               <section class="aboutAmara">
 
-                <header class="headerImage">
-                  <img src="@/assets/imgs/wta-icon.jpg" alt="">
-                </header>
-
+                  <img class="headerImg" src="@/assets/imgs/og-image.jpg" alt="">
+      
                 <h2>A Dungeon World Dramatic Performance Podcast</h2>
-
+                  
                   <hr class="amaraHR">
 
                     <p>
                     “Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are <strong><em>Sean and Andy</em></strong>, a GM/Player duo exploring the unique high fantasy world of Amara.
-                      <img class="floatL" src="@/assets/imgs/amaranmap.png"/>
                     </p>
 
+                      <img class="imageSize floatL desktopFloatR" src="@/assets/imgs/amaranmap.png"/>
 
                     <p>
                     Amara is a sword and sorcery realm with carefully crafted lore to uncover, featuring a growing cast of diverse characters of beasts and fast friends.
                     </p>
 
-
                     <p>
+                      <img class="imageSize mobileHide desktopFloatL floatR" src="@/assets/imgs/banditspink.jpg"/>
                     The storyline follows the main character Ydna, a traveling bard caught up in a flurry of proving grounds quests from his captain, Orric. Ydna is a curious drifter, who’s joined Eyien’s co-op militia, “The Coterie”.
-                      <img class="mobileHide floatR" src="@/assets/imgs/banditspink.jpg"/>
                     Above all else he's on a bardic journey to honor his grandfather, hoping to meet exemplary figures and experience all the realm of Amara 
                     has to offer recording most, but not all, in his <em>songbook.</em>
                     </p>
 
-                    <img class="floatL" src="@/assets/imgs/goblinspink.jpg"/>
+                    <img class="floatL desktopFloatR imageSize" src="@/assets/imgs/goblinspink.jpg"/>
 
                     <p>
                     Along the way we discover much about Amara and the city of Eyien, uncover secrets that threaten the kingdom, and piece together the mysterious forces surrounding this grand city of opportunity and potential.
                     </p>
 
-                      <img class="tabletHide mobileHide" src="@/assets/imgs/arri.png"/>
+                      <img class="tabletHide clearB imageSize centerImg mobileHide" src="@/assets/imgs/arri.png"/>
 
                       <br>
 
@@ -71,7 +68,7 @@
               </section>
 
               <footer class="footer">
-
+                  <section class="socialWrap">
                   <a href="http://www.twitter.com/misuseofmana" target="_blank">
                     <img src="@/assets/imgs/twitter.png" alt="twitter icon">
                   </a>
@@ -84,7 +81,7 @@
                   <a target="_blank" href="https://discord.gg/82GpmYD">
                     <img src="@/assets/imgs/discord.png" alt="discord icon - click to join our discord">
                   </a>
-
+                  </section>
               </footer>
 
               <section class="legal">
@@ -116,6 +113,7 @@ import "@/assets/styles/global.css";
 import "@/assets/styles/default.css";
 import "@/assets/styles/mobileport.css";
 import "@/assets/styles/tablet.css";
+import "@/assets/styles/desktop.css";
 
 import "@/assets/styles/transitions.css";
 
@@ -123,7 +121,7 @@ import "@/assets/styles/transitions.css";
 
 export default {
   name: 'welcomeToAmara',
-  title: 'WtA',
+  title: 'Welcome To Amara',
   components: {
   },
   data() {
@@ -134,13 +132,13 @@ export default {
   methods: {
     playSound() {
         this.interaction = !this.interaction;
-          var waveaudio = new Audio(require('@/assets/audio/magicPortal.wav'));
+          var waveaudio = new Audio(require('@/assets/audio/magicPortal.mp3'));
           waveaudio.play();
           this.playMusic();
     },
     playMusic(){
       setTimeout(function(){
-        var audio = new Audio(require('@/assets/audio/introspection.wav'));
+        var audio = new Audio(require('@/assets/audio/introspection.mp3'));
         audio.loop = true;
         audio.play();
       }, 5000 );
