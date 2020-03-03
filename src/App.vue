@@ -125,7 +125,7 @@ export default {
   },
   data() {
     return {
-      interaction: true,
+      interaction: false,
     }
   },
   methods: {
