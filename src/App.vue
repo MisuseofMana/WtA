@@ -22,7 +22,7 @@
                 <section class="podcastDescription">
                   
                   <section class="podcastIntro">
-                  <hr>
+           
 
                   <h2>A Dungeon World Dramatic Performance Podcast</h2>
                     <hr>
@@ -32,40 +32,47 @@
                     “Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are <strong><em>Sean (The GM)</em></strong> and <strong><em>Andy (Along for the Ride)</em></strong>, a GM/Player duo exploring the unique high fantasy world of Amara.
                     </p>
                       
-                    <img class="imageSize floatR" src="@/assets/imgs/amaranmap.png"/>
 
                     <p>
                     Amara is a sword and sorcery realm with carefully crafted lore to uncover, featuring a growing cast of diverse characters of beasts and fast friends.
+                    <img class="imageSize floatL" src="@/assets/imgs/amaranmap.png"/>
                     In Amara, there are humans, living among other humanoids scattered across the realm in settlements and villages and unstable camps.
-                    <img class="imageSize floatL" src="@/assets/imgs/banditspink.jpg"/>
                     At the neck of a prominent peninsula sits <strong>Eyien</strong> (pronounced YEE-in), it’s the city of cities, home to the <em>Ember King of Amara, King Rense.</em>
                     The title has been held by countless women and men before him. The Ember King's Rule is just and fair, leading Eyien into its immense prosperity.
                     </p>
 
-                    <img class="floatR imageSize" src="@/assets/imgs/swordsman.png"/>
 
                     <p>
-                    Eyien is where <strong>“Welcome to Amara”</strong> begins, it’s the place to be for security and for power in Amara.
+                    Eyien is where <strong>“Welcome to Amara”</strong> begins, 
+                    <img class="imageSize floatR" src="@/assets/imgs/banditspink.jpg"/>
+                    it’s the place to be for security and for power in Amara.
                     Within Eyien resides a group of soldiers and mages known as “The Coterie”.
                     They’re a group sworn to Loyalty under King Rense, and magically bound to the city.
                     The Coterie is tasked with defending and supporting their home.
                     They defend Eyien with impunity, proud to be part of something bigger than themselves. 
+                    <img class="floatL imageSize" src="@/assets/imgs/ydnaQuen.jpg"/>
                     </p>
 
-                    <img class="floatL imageSize" src="@/assets/imgs/cursepink.jpg"/>
                     
                     <p>
-                    Our main character Ydna (played by Andy) is a low ranking member of this Coterie, roped into a secret quest far beyond his intention that is rife with world ending consequences and threats. 
+                    Our main character Ydna (played by Andy) is a low ranking member of this Coterie, roped into a secret quest far beyond his intention, along with a young mage woman named Quen. Their quest is rife with world ending consequences and threats. 
                     Ydna is a traveling bard a curious drifter, caught up in a flurry of proving grounds quests from his Coterie captain, Orric, the kings emmissary and conduit. 
+                    <img class="floatR imageSize" src="@/assets/imgs/cursepink.jpg"/>
                     Above all else Ydna is on a bardic journey to honor his grandfather, hoping to meet exemplary figures and experience all the realm of Amara 
                     has to offer. He records most, but not all of his discoveries, in his <em>songbook</em> hoping to someday become part of the legends he's read about so eagerly.
                     </p>
 
-                    <img class="floatL imageSize" src="@/assets/imgs/ydnaQuen.jpg"/>
-
                     <p>
-                    Along the way we discover much about Amara and the city of Eyien, uncover secrets that threaten the kingdom, and piece together the mysterious forces surrounding this grand city of opportunity and potential in "Welcome to Amara".
+                    Along the way we discover much about Amara and the city of Eyien, 
+                    <img class="floatL imageSize" src="@/assets/imgs/goblinspink.jpg"/>
+                    uncover secrets that threaten the kingdom, and piece together the mysterious forces surrounding 
+                    this grand city of opportunity and potential in "Welcome to Amara".
                     </p>
+                  </section>
+
+                  <section class="floatR signature">
+                  <p>Thanks for reading,</p>
+                  <h1>-Sean &amp; Andy</h1>
                   </section>
 
                  
@@ -80,8 +87,6 @@
                     <img class="center bigImage" src="@/assets/imgs/arri.png"/>
 
                     <h1>"See You in Amara"</h1>
-                    
-                    <p class="signature">-Sean &amp; Andy</p>
                   
                 </section>
 
@@ -118,12 +123,15 @@
               </footer>
 
               <section class="legal">
+                <section>
                   "Welcome to Amara" is a product of "Misuse of Mana LLC" &copy; | No portion of this website or the content it represents may be reproduced in any 
                   manner whatsoever without the express permission from the authors, except in the case of short excerpts used for review. 
                   | <a href="http://www.seanyager.com" target="_blank"> seanyager.com </a> | Site Updated Feb 2020 
                   <br>
                   <br>
-                    Special thank you to freesound.org user <a href="https://freesound.org/people/alanmcki/" target="_blank">alanmcki</a> and the website <a href="https://www.purple-planet.com/" target="_blank">purple-planet.com</a> for providing audio.
+                    Special thank you to freesound.org user <a href="https://freesound.org/people/alanmcki/" target="_blank">alanmcki</a> 
+                    and the website <a href="https://www.purple-planet.com/" target="_blank">purple-planet.com</a> for providing audio.
+                </section>
                 </section>
 
                 <section class="footerRings">
@@ -146,7 +154,7 @@ import "@/assets/styles/global.css";
 
 import "@/assets/styles/default.css";
 import "@/assets/styles/mobileport.css";
-// import "@/assets/styles/tablet.css";
+import "@/assets/styles/tablet.css";
 // import "@/assets/styles/desktop.css";
 
 import "@/assets/styles/transitions.css";
@@ -160,7 +168,7 @@ export default {
   },
   data() {
     return {
-      interaction: true,
+      interaction: false,
     }
   },
   methods: {

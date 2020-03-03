@@ -89,12 +89,18 @@
         max-width:120px;
     }
     .bigImage{
-        max-width:300px;
+        max-width:200px;
+    }
+ 
+    .signature p {
+        font-size:20px;
+        margin:0;
     }
 
     /* float signature right -Sean & Andy */
-    .signature {
-        float:right;
+    .signature h1 {
+        font-size:25px;
+        margin:0;
     }
     
     /* Flex Container For Discord Link */
@@ -125,7 +131,7 @@
     }
     
     /* Hover Response for discord block */
-    .discordLink:hover {
+    .discordLinkWrap:hover {
         color:rgb(225, 0, 255);
         background:var(--link-background);
     }
@@ -169,7 +175,7 @@
     /* Controls the runes size in the footer */
     .footerRings .runish{
         display:block;
-        width:75%;
+        width:50%;
         margin:0 auto;
     }
 
