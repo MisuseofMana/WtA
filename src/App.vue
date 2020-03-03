@@ -67,11 +67,11 @@
                   Along the way we discover much about Amara and the city of Eyien, uncover secrets that threaten the kingdom, and piece together the mysterious forces surrounding this grand city of opportunity and potential in "Welcome to Amara".
                   </p>
                 
-                  <h2>Season 1 Arrives Mid 2020</h2>
+                  <h1>Season 1 Arrives Mid 2020</h1>
                   
                   <img class="center bigImage" src="@/assets/imgs/arri.png"/>
 
-                  <h2>"See You in Amara"</h2>
+                  <h1>"See You in Amara"</h1>
                 </section>
 
 
@@ -120,7 +120,7 @@
                 </section>
 
                 <section class="footerRings">
-                  <img class="runish imageSize" src="@/assets/imgs/runish.png" alt="a message from beyond the veil">
+                  <img class="runish" src="@/assets/imgs/runish.png" alt="a message from beyond the veil">
                   <img class="smallRings" src="@/assets/imgs/rings.gif" alt="rings that mark a criminal of Eyien">
                 </section>
               
@@ -138,7 +138,7 @@
 import "@/assets/styles/global.css";
 
 import "@/assets/styles/default.css";
-// import "@/assets/styles/mobileport.css";
+//import "@/assets/styles/mobileport.css";
 // import "@/assets/styles/tablet.css";
 // import "@/assets/styles/desktop.css";
 
