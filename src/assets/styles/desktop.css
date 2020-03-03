@@ -1,8 +1,12 @@
 /* Desktop CSS */
-@media (min-width: 900px) {
+@media (min-width: 1240px) {
     p {
         margin:10px 0px;
         font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    #app {
+        max-width:1000px;
     }
     
     .mobileHide{
@@ -17,7 +21,7 @@
     
     .gridCont {
         display:grid;
-        grid-template-columns: 30% 68%;
+        grid-template-columns: 68% 30%;
         grid-row-gap:20px;
         grid-column-gap:2%;
         width:100%;
@@ -43,7 +47,7 @@
     }
 
     .aboutAmara{
-        grid-column: 2/3;
+        grid-column: 1/2;
         grid-row: 2/5;
         padding:50px;
         background: var(--background);
@@ -106,7 +110,7 @@
         background: var(--background);
     }
 
-    .socialIcons {
+    .socialWrap {
         margin:10px;
         display:flex;
         justify-content: space-around;

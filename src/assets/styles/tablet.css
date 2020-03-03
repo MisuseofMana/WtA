@@ -1,7 +1,7 @@
 /* Breakpoint 768px - For displays less than 786px width */
 /* Tablet Portrait Displays */
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
     p {
         margin:10px 0px;
         font-family: 'Roboto Condensed', sans-serif;
@@ -9,6 +9,10 @@
 
     #app {
         max-width:900px;
+    }
+
+    body{
+        margin-top:20px;
     }
     
     .mobileHide{
@@ -110,6 +114,10 @@
         grid-row:3/4;
         padding:10px;
         background: var(--background);
+    }
+    
+    .socialWrap {
+        
         display:flex;
         justify-content: space-between;
         flex-direction: column;

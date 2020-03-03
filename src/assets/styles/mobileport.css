@@ -35,7 +35,8 @@
         padding:20px;
         background:var(--background);
     }
-    .headerImage {
+
+    .headerImg {
         display:none;
         width:90%;
         margin:0 auto;
@@ -103,21 +104,27 @@
         grid-row:3/4;
         padding:10px;
         background: var(--background);
+        
+    }
+    
+    .socialWrap {
+        width:100%;
         display:flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
     }
-    
-    .footer a {
-        width:80%;
-        height:80%;
-        margin:10px;
+
+    .footer a{
+        width:70%;
+        height:70%;
+        margin:10px 0;
     }
 
-    .footer img {
+    .footer a img {
         width:100%;
-        height:100%;
+        height:70%;
+        margin:0;
     }
 
     .legal{
