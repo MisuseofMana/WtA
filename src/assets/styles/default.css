@@ -1,26 +1,37 @@
 /* Default CSS */
 /* Mobile Portrait Displays */
 
-@media (min-width: 300px) {
-
+    /* Floats for images in podcast decription */
     .floatL{float:left; margin:10px 10px 10px 0px}
     .floatR{float:right; margin:10px 0px 10px 10px}
     .center{clear:both; display:block; margin:0 auto;}
 
-    /* common paragraph style site wide */
+    /* provides background image to site */
+    body {
+        background-image:url('../imgs/mobileBackground.png');
+        background-repeat: repeat-y;
+        background-size: cover;
+    }
+    
+    /* change font-size rule for more control over readability on varying display sizes */
     p {
         margin:10px 0px;
         font-family: 'Roboto Condensed', sans-serif;
         font-size:18px;
     }
     
+    /* container for the full site */
     .gridCont {
+        width:90%;
+        max-width:375px;
+        margin:0 auto;
         display:grid;
         grid-template-columns: 100%;
         grid-column-gap:0;
         grid-row-gap:10px;
     }
     
+    /* Text Header "Welcome to Amara" */
     .headerText {
         grid-row:1/2;
         display:block;
@@ -29,6 +40,7 @@
         color:var(--main-color);
     }
 
+    /* Header Image - flame icon */
     .headerImg {
         display:block;
         width:50%;
@@ -37,6 +49,7 @@
         margin:0 20px 20px 0;
     }
 
+    /* Container for the biggest chunk of the site */
     .aboutAmara {
         grid-row:3/4;
         padding:20px;
@@ -46,24 +59,45 @@
 
     }
 
+    /* Rule changes first header in podcast description */
     .aboutAmara h2 {
         width:100%;
         font-size:20px;
         text-align:center;
     }
 
+    .podcastSignoff {
+        grid-row:4/5;
+        background:var(--background);
+    }
+
+    .podcastSignoff p {
+        font-size:20px;
+        margin:10px;
+        color:var(--main-color);
+    }
+
+    /* Last bit in podcast description section */
+    .podcastSignoff h1 {
+        font-size:20px;
+        text-align:center;
+        color:var(--main-color);
+    }
+
+    /* controls image sizes in the podcast description section */
     .imageSize{
         max-width:120px;
     }
-
     .bigImage{
         max-width:300px;
     }
 
+    /* float signature right -Sean & Andy */
     .signature {
         float:right;
     }
     
+    /* Flex Container For Discord Link */
     .discordLink {
         grid-row:2/3;
         display:flex;
@@ -74,41 +108,49 @@
         color:var(--main-color);
     }
 
+    /* Discord Link Text Size */
     .discordLink p {
         font-size:14px;
     }
 
+    /* Removes Underline from discord text */
     .discordLinkWrap {
         text-decoration: none;
     }
 
+    /* Changes size of discord icon image */
     .discordLink img {
         width:100px;
         margin-left:20px;
     }
     
+    /* Hover Response for discord block */
     .discordLink:hover {
         color:rgb(225, 0, 255);
         background:var(--link-background);
     }
     
+    /* Footer Container, Social Icons */
     .footer {
-        grid-row:4/5;
+        grid-row:5/6;
         padding:20px 0px 20px 0px;
         background: var(--background);
     }
     
+    /* Inner Wrapper for Social Icons */
     .socialWrap {
         display:flex;
         justify-content: space-evenly;
     }
 
+    /* Controls image size of Social Icons */
     .socialWrap img {
         width:75px;
     }
 
+    /* Container for Legal block */
     .legal{
-        grid-row:5/6;
+        grid-row:6/7;
         background:var(--background);
         z-index:999;
         text-align:center;
@@ -119,20 +161,22 @@
         font-family:"Roboto Condensed", sans-serif;
     }
 
+    /* Bottom of page rings container */
     .footerRings {
-        grid-row:6/7;
+        grid-row:7/8;
     }
 
+    /* Controls the runes size in the footer */
     .footerRings .runish{
         display:block;
         width:75%;
         margin:0 auto;
     }
 
+    /* Controls Ring size at the footer */
     .smallRings {
         display:block;
         width:200px;
         height:200px;
         margin:0 auto;
     }
-}

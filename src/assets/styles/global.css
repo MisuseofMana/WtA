@@ -10,6 +10,13 @@
     --main-color:  rgb(255, 0, 128);
 }
 
+.introRings {
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 body {
     padding:0px;
     margin:0px;
@@ -18,9 +25,9 @@ body {
     background-size: cover;
 }
 
-#app{
+.main{
     display:block;
-    width:90%;
+    width:100%;
     margin:20px auto;
 }
 
@@ -29,6 +36,8 @@ body {
     height:300px;
     width:300px;
     cursor: pointer;
+    display:flex;
+
 }
 
 hr {
@@ -66,18 +75,6 @@ a:hover {
 .centerText {
     text-align:center;
 }
-
-.centerflex {
-    display: flex;
-    height:inherit;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .imageFlex {
-      display:flex;
-      justify-content: space-evenly;
-  }
 
   .witchMagic {
     z-index:-999;
