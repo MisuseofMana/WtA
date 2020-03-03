@@ -160,6 +160,10 @@
         margin:0 auto;
     }
 
+    .tabletHide {
+        display:none;
+    }
+
     .smallRings {
         display:block;
         width:200px;

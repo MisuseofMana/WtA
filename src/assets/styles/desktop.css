@@ -5,12 +5,20 @@
         font-family: 'Roboto Condensed', sans-serif;
     }
 
+    .desktopHide {
+        display:none;    
+    }
+
     #app {
         max-width:1000px;
     }
     
     .mobileHide{
-        display:none;
+        display:block;
+    }
+
+    .tabletHide {
+        display:block;
     }
 
     .rings {
@@ -36,22 +44,23 @@
         background:var(--background);
     }
     
-    .headerImage {
-        display:none;
-        width:90%;
+    .headerImg {
+        display:block;
+        width:300px;
+        float:right;
         margin:0 auto;
     }
 
-    .headerImage img {
+    .headerImg img {
         width:100%;
     }
 
     .aboutAmara{
         grid-column: 1/2;
-        grid-row: 2/5;
+        grid-row: 2/4;
         padding:50px;
         background: var(--background);
-        font-size:25px;
+        font-size:20px;
         font-family: 'Roboto Condensed', sans-serif;
         color:var(--main-color);
         margin:0px 0;
@@ -59,12 +68,15 @@
     }
     .aboutAmara h2 {
         width:100%;
-        font-size:40px;
+        font-size:30px;
         text-align:center;
     }
-    .aboutAmara img {
-        max-width:200px;
-        margin:20px 20px;
+    .aboutAmara {
+        max-width:none;
+        margin:10px 20px;
+    }
+    .imageSize {
+        width:150px;
     }
     .floatL{
         float:left;
@@ -75,27 +87,36 @@
     .clearB {
         clear:none;
     }
+    .desktopFloatL {
+        float:left;
+    }
+    .desktopFloatR {
+        float:right;
+    }
+    .arriImage{
+        display:inline;
+        max-width:none;
+        margin:0 auto;
+        width:400px;
+    }
     
     .discordLink {
-        grid-column: 1/2;
+        grid-column: 2/3;
         grid-row:2/3;
-        display:flex;
+        display:block;
         margin:0px;
         padding:20px;
-        justify-content:space-around;
-        align-items: center;
         background: var(--background);
         color:var(--main-color);
     }
 
     .discordLink p {
-        font-size:15px;
+        font-size:20px;
         padding:0 5px
     }
     
     .discordLink a {
-        display:block;
-        margin:20px;
+        margin:10px auto;;
         width:150px;
     }
     
@@ -104,8 +125,8 @@
     }
     
     .footer {
-        grid-row:4/5;
-        grid-column:1/3;
+        grid-row:3/4;
+        grid-column:2/3;
         padding:10px;
         background: var(--background);
     }
@@ -137,6 +158,7 @@
 
     .footerRings {
         grid-column:1/3;
+        grid-row:6/7;
         display:block;
         width:100%;
 

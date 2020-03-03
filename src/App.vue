@@ -24,30 +24,29 @@
 
                     <p>
                     “Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are <strong><em>Sean and Andy</em></strong>, a GM/Player duo exploring the unique high fantasy world of Amara.
+                      <img class="imageSize floatL desktopFloatL" src="@/assets/imgs/amaranmap.png"/>
                     </p>
 
-                      <img class="imageSize floatL desktopFloatR" src="@/assets/imgs/amaranmap.png"/>
 
                     <p>
                     Amara is a sword and sorcery realm with carefully crafted lore to uncover, featuring a growing cast of diverse characters of beasts and fast friends.
+                      <img class="imageSize mobileHide desktopFloatR floatR" src="@/assets/imgs/banditspink.jpg"/>
                     </p>
 
                     <p>
-                      <img class="imageSize mobileHide desktopFloatL floatR" src="@/assets/imgs/banditspink.jpg"/>
                     The storyline follows the main character Ydna, a traveling bard caught up in a flurry of proving grounds quests from his captain, Orric. Ydna is a curious drifter, who’s joined Eyien’s co-op militia, “The Coterie”.
                     Above all else he's on a bardic journey to honor his grandfather, hoping to meet exemplary figures and experience all the realm of Amara 
                     has to offer recording most, but not all, in his <em>songbook.</em>
                     </p>
 
-                    <img class="floatL desktopFloatR imageSize" src="@/assets/imgs/goblinspink.jpg"/>
+                    <img class="floatL desktopFloatL imageSize" src="@/assets/imgs/goblinspink.jpg"/>
 
                     <p>
                     Along the way we discover much about Amara and the city of Eyien, uncover secrets that threaten the kingdom, and piece together the mysterious forces surrounding this grand city of opportunity and potential.
                     </p>
 
-                      <img class="tabletHide clearB imageSize centerImg mobileHide" src="@/assets/imgs/arri.png"/>
+                     
 
-                      <br>
 
                       <h2>Season 1 Arriving Mid 2020</h2>
               </section>
