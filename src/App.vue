@@ -163,7 +163,6 @@ import "@/assets/styles/transitions.css";
 
 export default {
   name: 'welcomeToAmara',
-  title: 'Welcome To Amara',
   components: {
   },
   data() {
