@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "flipbook-vue": "^0.8.0",
     "howler": "^2.1.3",
-    "vue": "^2.6.11"
+    "jquery": "^3.4.1",
+    "vue": "^2.6.11",
+    "vue-turn": "^1.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",

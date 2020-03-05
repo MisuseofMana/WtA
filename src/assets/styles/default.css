@@ -186,3 +186,11 @@
         height:200px;
         margin:0 auto;
     }
+
+    /* easteregg */
+    .easter {
+        height:100vh;
+        display:flex;
+        justify-content: center;
+        align-content:center;
+    }

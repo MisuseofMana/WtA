@@ -6,7 +6,8 @@
         <img class="headphones" src="@/assets/imgs/headphones.png" alt="Please use Headphones for the full Welcome to Amara experience.">
       </section>
       
-      <div key="main" class="main" v-else>
+      <div key="main" class="main" v-if="interaction && !easter">
+
         <section class="gridCont">
 
               <header class="headerText">
@@ -144,32 +145,39 @@
             </section>
         
           <section class="witchMagic"></section>
+      
+      
+      
       </div>
-        
+
+      <div key="easter" class="easter" v-if="easter">
+        <ydna-songbook></ydna-songbook>
+      </div>
+
       </transition>
   </div>
 </template>
 
 <script>
+import YdnaSongbook from '@/components/ydnaSongbook';
 
 import "@/assets/styles/global.css";
 
 import "@/assets/styles/default.css";
 import "@/assets/styles/mobileport.css";
 import "@/assets/styles/tablet.css";
-// import "@/assets/styles/desktop.css";
 
 import "@/assets/styles/transitions.css";
-
-
 
 export default {
   name: 'welcomeToAmara',
   components: {
+     YdnaSongbook,
   },
   data() {
     return {
-      interaction: false,
+      interaction: true,
+      easter: true,
     }
   },
   methods: {
