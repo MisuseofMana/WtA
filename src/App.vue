@@ -2,7 +2,8 @@
   <div id="app">
       <transition name="fade" mode="out-in">
       <section key="intro" class="introRings" v-if="!interaction">
-        <img class="rings" @click.prevent="playSound()" src="@/assets/imgs/rings.gif" alt="">
+        <img class="rings" @click.prevent="playSound()" src="@/assets/imgs/rings.gif" alt="Amaran rings which mark a criminal of Eyein">
+        <img class="headphones" src="@/assets/imgs/headphones.png" alt="Please use Headphones for the full Welcome to Amara experience.">
       </section>
       
       <div key="main" class="main" v-else>
@@ -29,7 +30,8 @@
                     
 
                     <p>
-                    “Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are <strong><em>Sean (The GM)</em></strong> and <strong><em>Andy (Along for the Ride)</em></strong>, a GM/Player duo exploring the unique high fantasy world of Amara.
+                    “Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. 
+                    We are <strong><em>Sean (The GM)</em></strong> and <strong><em>Andy (Along for the Ride)</em></strong>, a GM/Player duo exploring the unique high fantasy world of Amara.
                     </p>
                       
 
@@ -174,6 +176,7 @@ export default {
     playSound() {
         this.interaction = !this.interaction;
           var waveaudio = new Audio(require('@/assets/audio/magicPortal.mp3'));
+          waveaudio.volume = 0.2;
           waveaudio.play();
           this.playMusic();
     },
@@ -181,6 +184,7 @@ export default {
       setTimeout(function(){
         var audio = new Audio(require('@/assets/audio/introspection.mp3'));
         audio.loop = true;
+        audio.volume = 0.3;
         audio.play();
       }, 5000 );
     }
