@@ -1,7 +1,7 @@
 /* Breakpoint 768px - For displays less than 786px width */
 /* Tablet Portrait Displays */
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
    /* Floats for images in podcast decription */
    .floatL{float:left; margin:10px 10px 10px 0px}
    .floatR{float:right; margin:10px 0px 10px 10px}
@@ -202,4 +202,22 @@
        height:200px;
        margin:0 auto;
    }
+
+  .easter h1 {
+        font-size:20px;
+        width:90%;
+        margin:0 auto 20px auto;
+        padding:10px;
+ 
+    }
+
+    .easter h1:hover {
+        color:rgb(225, 0, 255);
+        cursor:pointer;
+    }
+
+    .flipbook {
+        width:655px;
+        height:550px;
+    }
 }

@@ -189,8 +189,28 @@
 
     /* easteregg */
     .easter {
+        width:100vw;
         height:100vh;
         display:flex;
         justify-content: center;
-        align-content:center;
+        align-items:center;
+        margin:0 auto;
+        color:var(--main-color);
+    }
+
+    .easter h1 {
+        font-size:20px;
+        width:90%;
+        margin:0 auto 20px auto;
+        padding:10px;
+    }
+
+    .easter h1:hover {
+        color:rgb(225, 0, 255);
+        cursor:pointer;
+    }
+
+    .flipbook {
+        width:375px;
+        height:400px;
     }

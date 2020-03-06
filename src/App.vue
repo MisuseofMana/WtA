@@ -2,7 +2,7 @@
   <div id="app">
       <transition name="fade" mode="out-in">
       <section key="intro" class="introRings" v-if="!interaction">
-        <img class="rings" @click.prevent="playSound()" src="@/assets/imgs/rings.gif" alt="Amaran rings which mark a criminal of Eyein">
+        <img class="rings" @click.once="login() && playMusic()" src="@/assets/imgs/rings.gif" alt="Amaran rings which mark a criminal of Eyein">
         <img class="headphones" src="@/assets/imgs/headphones.png" alt="Please use Headphones for the full Welcome to Amara experience.">
       </section>
       
@@ -132,12 +132,13 @@
                   | <a href="http://www.seanyager.com" target="_blank"> seanyager.com </a> | Site Updated Feb 2020 
                   <br>
                   <br>
-                    Special thank you to freesound.org user <a href="https://freesound.org/people/alanmcki/" target="_blank">alanmcki</a> 
+                    Special thank you to freesound.org user <a href="https://freesound.org/people/trundlefly/" target="_blank">trundlefly</a>, 
                     and the website <a href="https://www.purple-planet.com/" target="_blank">purple-planet.com</a> for providing audio.
                 </section>
                 </section>
 
                 <section class="footerRings">
+                  <div class="easterout"> {{ secret }} </div>
                   <img class="runish" src="@/assets/imgs/runish.png" alt="a message from beyond the veil">
                   <img class="smallRings" src="@/assets/imgs/rings.gif" alt="rings that mark a criminal of Eyien">
                 </section>
@@ -145,13 +146,17 @@
             </section>
         
           <section class="witchMagic"></section>
-      
-      
-      
       </div>
 
       <div key="easter" class="easter" v-if="easter">
-        <ydna-songbook></ydna-songbook>
+        <div>
+        <h1 @click.once="homeNav()">BACK TO HOMEPAGE</h1>
+        <div class="bookContainer">
+          <ydna-songbook
+            @flip-left-start="pageTurn()"
+          ></ydna-songbook>
+        </div>
+        </div>
       </div>
 
       </transition>
@@ -164,6 +169,7 @@ import YdnaSongbook from '@/components/ydnaSongbook';
 import "@/assets/styles/global.css";
 
 import "@/assets/styles/default.css";
+
 import "@/assets/styles/mobileport.css";
 import "@/assets/styles/tablet.css";
 
@@ -176,26 +182,85 @@ export default {
   },
   data() {
     return {
-      interaction: true,
-      easter: true,
+      interaction: false,
+      easter: false,
+      easteregg: "songbook",
+      secret: "",
+    }
+  },
+  mounted() {
+    let self = this;
+    window.addEventListener('keyup', function(ev){
+      let keyPress = ev.key;
+      self.checkSecret(keyPress);
+    });
+  },
+  watch: {
+    secret: async function (newState) {
+      if (newState == this.easteregg) {
+        
+        await(1000);
+        
+        this.easter = true;
+        this.playMusic('stop');
+        this.playSound();
+        
+      }
     }
   },
   methods: {
-    playSound() {
-        this.interaction = !this.interaction;
-          var waveaudio = new Audio(require('@/assets/audio/magicPortal.mp3'));
-          waveaudio.volume = 0.2;
-          waveaudio.play();
-          this.playMusic();
+    login() {
+       this.interaction = !this.interaction;
+       this.playSound();
     },
-    playMusic(){
-      setTimeout(function(){
-        var audio = new Audio(require('@/assets/audio/introspection.mp3'));
-        audio.loop = true;
-        audio.volume = 0.3;
-        audio.play();
-      }, 5000 );
+    playSound() {
+      let currentSound = new Audio(require('@/assets/audio/magicPortal.mp3'));
+      currentSound.volume = 0.3;
+      currentSound.play();
+    },
+    async playSoundSecret(inst) {
+      var secretaudio = new Audio(require('@/assets/audio/crystalWaters.mp3'));
+        secretaudio.volume = 0.3;
+      if(inst == 'stop') {
+        secretaudio.pause();
+      }
+      else {
+        await(5000);
+        secretaudio.play();
+      }
+    },
+    async playMusic(inst){
+      var audio = new Audio(require('@/assets/audio/introspection.mp3'));
+      audio.loop = true;
+      audio.volume = 0.3;
+      if (inst == "stop") {
+          audio.pause();
+          this.playSoundSecret();
+        }
+      else {
+        console.log('playing home page audio')
+            await (5000);
+            audio.play();
+        }
+    },
+    homeNav() {
+      this.easter=false;
+      this.playSoundSecret('stop');
+      this.playSound();
+    },
+    checkSecret(userPressed) {
+      if (this.interaction == false) {
+        console.log('Vanquish the rings first squire...')
+      } 
+      else if( this.secret.length >= 8) {
+        this.secret = this.secret.slice(1,8);
+        this.secret = this.secret + userPressed;
+      }
+      else {
+        this.secret = this.secret + userPressed;
+      }
     }
-  }
+  },
 }
+
 </script>

@@ -94,3 +94,10 @@ a:hover {
     background-size: 700px;
     background-repeat: repeat-x;
 }
+
+.easterout {
+    color:var(--main-color);
+    font-family: "Permanent Marker", sans-serif;
+    font-size:50px;
+    text-align:center;
+}

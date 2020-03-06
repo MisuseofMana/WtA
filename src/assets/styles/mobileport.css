@@ -200,4 +200,22 @@
        height:200px;
        margin:0 auto;
    }
+
+.easter h1 {
+        font-size:20px;
+        width:90%;
+        margin:0 auto 20px auto;
+        padding:10px;
+     
+    }
+
+    .easter h1:hover {
+        color:rgb(225, 0, 255);
+        cursor:pointer;
+    }
+
+    .flipbook {
+        width:555px;
+        height:250px;
+    }
 }
