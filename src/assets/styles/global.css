@@ -96,8 +96,12 @@ a:hover {
 }
 
 .easterout {
-    color:var(--main-color);
+    color:rgba(243,184,8,1);
     font-family: "Permanent Marker", sans-serif;
-    font-size:50px;
+    font-size:25px;
     text-align:center;
+    background-color: var(--background);
+    padding:0 0;
+    width:30%;
+    margin:0 auto 20px;
 }

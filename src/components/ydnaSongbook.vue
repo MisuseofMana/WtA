@@ -21,7 +21,7 @@
 import Flipbook from 'flipbook-vue'
 
 export default {
-  name: "YdnaSongbook",
+  name: "ydnaSongbook",
   components: { Flipbook },
   methods: {
     pageSound(){
