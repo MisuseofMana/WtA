@@ -3,13 +3,20 @@
   :zooms="[1]"
   :pages="[ null,
   require('@/assets/imgs/books/1.jpg'),
+
   require('@/assets/imgs/books/2.jpg'),
   require('@/assets/imgs/books/3.jpg'),
+
   require('@/assets/imgs/books/4.jpg'),
   require('@/assets/imgs/books/5.jpg'),
+
   require('@/assets/imgs/books/6.jpg'),
   require('@/assets/imgs/books/7.jpg'),
-  require('@/assets/imgs/books/8.jpg'),
+
+  require('@/assets/imgs/books/mentalMadness0.jpg'),
+  require('@/assets/imgs/books/mentalMadness1.jpg'),
+
+  require('@/assets/imgs/books/blankL.jpg'),
   require('@/assets/imgs/books/backinterior.jpg'),
   ]"
    @flip-left-start="pageSound()"
