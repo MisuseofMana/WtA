@@ -1,14 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Romanesco&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Germania+One&display=swap');
+
+@font-face {
+    font-family: runes;
+    src: url('../fonts/runes.woff2');
+}
 
 :root {
     --background: rgba(37, 35, 35, .7);
     --link-background: rgba(46, 42, 45, 0.7);
     --main-color:  rgb(255, 0, 128);
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(88,0,46);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 0, 128);;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(250, 95, 255);
+  }
 
 .introRings {
     height:100vh;
@@ -96,12 +118,15 @@ a:hover {
 }
 
 .easterout {
-    color:rgba(243,184,8,1);
-    font-family: "Permanent Marker", sans-serif;
-    font-size:25px;
+    color:rgba(225, 0, 255, .5);
+    font-family: runes;
+    font-size:40px;
+    height:45px;
     text-align:center;
-    background-color: var(--background);
-    padding:0 0;
-    width:30%;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    background-color: rgba(225, 0, 255, .2);
+    padding:10px 0;
+    width:50%;
     margin:0 auto 20px;
 }

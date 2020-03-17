@@ -6,10 +6,16 @@
         <ring-intro key="intro" @login="interaction = true" class="introRings" v-if="!this.interaction"></ring-intro>
       
         <!-- Main Content -->
-        <main-page key="mainPage" @secretSolve="easter = !easter" v-if="this.interaction && !this.easter"></main-page>
+        <main-page key="mainPage" 
+        @secretSolve="easter = !easter" v-if="this.interaction && (!this.easter && !this.easterQuen)"
+        @quenSecretSolve="easterQuen = !easterQuen"
+        ></main-page>
 
         <!-- A Secret -->
-        <easter-egg key="easter" @backHome="easter = !easter" v-if="this.easter"></easter-egg>
+        <ydna-easter-egg key="easter" @backHome="easter = !easter" v-if="this.easter"></ydna-easter-egg>
+        
+        <!-- Another Secret -->
+        <quen-easter-egg key="easter" @backHome="easterQuen = !easterQuen" v-if="this.easterQuen"></quen-easter-egg>
 
       </transition>
   </div>
@@ -18,7 +24,8 @@
 <script>
 import ringIntro from '@/components/ringIntro';
 import mainPage from '@/components/mainPage';
-import easterEgg from '@/components/easterEgg';
+import ydnaEasterEgg from '@/components/ydnaEasterEgg';
+import quenEasterEgg from '@/components/quenEasterEgg';
 
 import "@/assets/styles/global.css";
 
@@ -32,7 +39,8 @@ import "@/assets/styles/transitions.css";
 export default {
   name: 'welcomeToAmara',
   components: {
-     easterEgg,
+     ydnaEasterEgg,
+     quenEasterEgg,
      ringIntro,
      mainPage,
   },
@@ -40,6 +48,7 @@ export default {
     return {
       interaction: false,
       easter: false,
+      easterQuen: false,
     }
   },
 }

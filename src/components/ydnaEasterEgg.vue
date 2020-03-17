@@ -11,7 +11,7 @@
 import ydnaSongbook from '@/components/ydnaSongbook';
 
     export default {
-        name: 'easterEgg',
+        name: 'ydnaEasterEgg',
         data() {
             return {
                 secretMusic: new Audio(require('@/assets/audio/crystalWaters.mp3')),

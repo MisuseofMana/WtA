@@ -130,9 +130,7 @@
                 </section>
 
                 <section class="footerRings">
-                    <transition v-if="this.secret.length > 0" name="fade" mode="in-out">
                         <div key="secretBox" class="easterout"> {{ secret }} </div>
-                    </transition>
                   <img class="runish" src="@/assets/imgs/runish.png" alt="a message from beyond the veil">
                   <img class="smallRings" src="@/assets/imgs/rings.gif" alt="rings that mark a criminal of Eyien">
                 </section>
@@ -156,14 +154,15 @@
                 mainMusic: new Audio(require('@/assets/audio/introspection.mp3')),
                 secret: '',
                 easteregg: 'songbook',
+                quenEasterEgg: 'spellbook'
             }
         },
         name: 'mainPage',
         methods: {
         checkSecret(userPressed) {
-                if ( this.secret.length >= 8 ) {
+                if ( this.secret.length >= 9 ) {
                     this.secret = this.secret + userPressed;
-                    this.secret = this.secret.slice(1,9);
+                    this.secret = this.secret.slice(1,10);
                 }
                 else {
                     this.secret = this.secret + userPressed;
@@ -174,8 +173,10 @@
                 await delay(1000);
                 if (check == this.easteregg) {
                         this.$emit('secretSolve');
-                        this.secret = "solved";
                     }
+                else if (check == this.quenEasterEgg) {
+                    this.$emit('quenSecretSolve');
+                }
             }
         },
         mounted() {
@@ -185,6 +186,10 @@
                 {
                     let keyPress = ev.key.toLowerCase();
                     self.checkSecret(keyPress);
+                }
+                else if (ev.which == 8) {
+                  self.secret = "";
+                  console.log("backspaced")
                 }
             });
         },
