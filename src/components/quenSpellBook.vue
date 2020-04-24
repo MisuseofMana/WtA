@@ -7,8 +7,14 @@
   require('@/assets/imgs/books/quen/intcover.jpg'),
   require('@/assets/imgs/books/quen/intrightpage1.jpg'),
 
-  require('@/assets/imgs/books/quen/spreadleftgoblin.jpg'),
-  require('@/assets/imgs/books/quen/spreadrightgoblins.jpg'),
+  require('@/assets/imgs/books/quen/page2.jpg'),
+  require('@/assets/imgs/books/quen/page1.jpg'),
+
+  require('@/assets/imgs/books/quen/page3.jpg'),
+  require('@/assets/imgs/books/quen/page4.jpg'),
+  
+  require('@/assets/imgs/books/quen/page5.jpg'),
+  require('@/assets/imgs/books/quen/page6.jpg'),
   
   require('@/assets/imgs/books/quen/blankLeft.jpg'),
   require('@/assets/imgs/books/quen/intbackcover.jpg'),
