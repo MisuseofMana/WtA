@@ -2,22 +2,28 @@
   <flipbook class="flipbook" 
   :zooms="[1]"
   :pages="[ null,
-  require('@/assets/imgs/books/quen/cover.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook.jpg'),
 
-  require('@/assets/imgs/books/quen/intcover.jpg'),
-  require('@/assets/imgs/books/quen/intrightpage1.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook2.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook3.jpg'),
 
-  require('@/assets/imgs/books/quen/page2.jpg'),
-  require('@/assets/imgs/books/quen/page1.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook4.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook5.jpg'),
 
-  require('@/assets/imgs/books/quen/page3.jpg'),
-  require('@/assets/imgs/books/quen/page4.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook6.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook7.jpg'),
   
-  require('@/assets/imgs/books/quen/page5.jpg'),
-  require('@/assets/imgs/books/quen/page6.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook8.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook9.jpg'),
   
-  require('@/assets/imgs/books/quen/blankLeft.jpg'),
-  require('@/assets/imgs/books/quen/intbackcover.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook10.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook11.jpg'),
+  
+  require('@/assets/imgs/books/quen/QuensBook12.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook13.jpg'),
+  
+  require('@/assets/imgs/books/quen/QuensBook14.jpg'),
+  require('@/assets/imgs/books/quen/QuensBook15.jpg'),
 
   ]"
    @flip-left-start="pageSound()"
