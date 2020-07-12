@@ -158,17 +158,8 @@
             }
         },
           metaInfo: {
-              // if no subcomponents specify a metaInfo.title, this title will be used
             title: 'Coming August 12 2020',
-            meta: [
-              { charset: 'utf-8' },
-              { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-              { name:"keywords", content:"Fantasy, Podcast, Drama, Dungeon, World, Dungeon World, Dungeon World Podcast, Welcome, Amara, Story, Storytelling, RPG, Dungeons, Dragons" },
-              { name: 'author', content: 'Sean Yager' },
-              { name: 'description', content: '“Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are Sean (The GM) and Andy (Along for the Ride), a GM/Player duo exploring the unique high fantasy world of Amara.'},
-            ],
-
-        },
+          },
         name: 'mainPage',
         methods: {
         checkSecret(userPressed) {
