@@ -77,11 +77,11 @@
 
               <section class="podcastSignoff">
                   
-                    <h1>Season 1 Launches Mid July 2020</h1>
+                    <h1>Season 1 Launches August 12th 2020</h1>
                     
                     <img class="center bigImage" src="@/assets/imgs/arri.png"/>
 
-                    <h1>"See You in Amara"</h1>
+                    <h1>See you there.</h1>
                   
                 </section>
 
@@ -121,7 +121,7 @@
                 <section>
                   "Welcome to Amara" is a product of "Misuse of Mana LLC" &copy; | No portion of this website or the content it represents may be reproduced in any 
                   manner whatsoever without the express permission from the authors, except in the case of short excerpts used for review. 
-                  | <a href="http://www.seanyager.com" target="_blank"> seanyager.com </a> | Site Updated June 29th 2020
+                  | <a href="http://www.seanyager.com" target="_blank"> seanyager.com </a> | Site Updated January 12th 2020
                   <br>
                   <br>
                     Special thank you to freesound.org user <a href="https://freesound.org/people/trundlefly/" target="_blank">trundlefly</a>, 
