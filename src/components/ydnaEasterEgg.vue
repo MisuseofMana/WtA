@@ -12,6 +12,10 @@ import ydnaSongbook from '@/components/ydnaSongbook';
 
     export default {
         name: 'ydnaEasterEgg',
+        metaInfo: {
+              // if no subcomponents specify a metaInfo.title, this title will be used
+            title: 'Songbook',
+        },
         data() {
             return {
                 secretMusic: new Audio(require('@/assets/audio/crystalWaters.mp3')),

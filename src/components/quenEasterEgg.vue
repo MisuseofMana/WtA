@@ -12,6 +12,10 @@ import quenSpellBook from '@/components/quenSpellBook';
 
     export default {
         name: 'quenEasterEgg',
+        metaInfo: {
+              // if no subcomponents specify a metaInfo.title, this title will be used
+            title: 'Spellbook',
+        },
         data() {
             return {
                 secretMusic: new Audio(require('@/assets/audio/etherealEternity.mp3')),

@@ -37,13 +37,19 @@ import "@/assets/styles/tablet.css";
 import "@/assets/styles/transitions.css";
 
 export default {
-  name: 'welcomeToAmara',
+  name: 'WelcomeToAmara',
   components: {
      ydnaEasterEgg,
      quenEasterEgg,
      ringIntro,
      mainPage,
   },
+    metaInfo: {
+      // if no subcomponents specify a metaInfo.title, this title will be used
+      title: 'Welcome to Amara',
+      // all titles will be injected into this template
+      titleTemplate: '%'
+    },
   data() {
     return {
       interaction: false,
