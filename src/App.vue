@@ -48,9 +48,9 @@ export default {
       title: 'Welcome to Amara',
       meta: [
         { charset: 'utf-8' },
-        { property="og:type", content="website" },
-        { property="og:image", content="https://www.welcometoamara.com/s1-wta-icon.jpg" },
-        { property="og:url", content="https://www.welcometoamara.com" },
+        { property:"og:type", content:"website" },
+        { property:"og:image", content:"https://www.welcometoamara.com/s1-wta-icon.jpg" },
+        { property:"og:url", content:"https://www.welcometoamara.com" },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name:"keywords", content:"Fantasy, Podcast, Drama, Dungeon, World, Dungeon World, Dungeon World Podcast, Welcome, Amara, Story, Storytelling, RPG, Dungeons, Dragons" },
         { name: 'author', content: 'Sean Yager' },
