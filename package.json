@@ -13,6 +13,7 @@
     "howler": "^2.2.0",
     "jquery": "^3.5.1",
     "vue": "^2.6.11",
+    "vue-meta": "^2.4.0",
     "vue-turn": "^1.0.2"
   },
   "devDependencies": {
