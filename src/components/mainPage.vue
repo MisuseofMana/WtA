@@ -12,7 +12,7 @@
               <!-- Main Content of Site - About Amara, and images -->
               <main class="aboutAmara">
                   
-                  <img class="headerImg" src="@/assets/imgs/wta-icon.jpg" alt="">
+                  <img class="headerImg" src="@/assets/imgs/wta-season1.png" alt="">
 
                 <section class="podcastDescription">
                   
@@ -163,7 +163,7 @@
             meta: [
               { charset: 'utf-8' },
               { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-              {name:"keywords", content:"Fantasy, Podcast, Drama, Dungeon, World, Dungeon World, Dungeon World Podcast, Welcome, Amara, Story, Storytelling, RPG, Dungeons, Dragons" },
+              { name:"keywords", content:"Fantasy, Podcast, Drama, Dungeon, World, Dungeon World, Dungeon World Podcast, Welcome, Amara, Story, Storytelling, RPG, Dungeons, Dragons" },
               { name: 'author', content: 'Sean Yager' },
               { name: 'description', content: '“Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are Sean (The GM) and Andy (Along for the Ride), a GM/Player duo exploring the unique high fantasy world of Amara.'},
             ],
