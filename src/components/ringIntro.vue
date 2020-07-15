@@ -1,11 +1,18 @@
 <template>
-    <section>
-        <img class="rings" @click.once="login()" src="@/assets/imgs/rings.gif" alt="Amaran rings which mark a criminal of Eyein">
-        <img class="headphones" src="@/assets/imgs/headphones.png" alt="Please use Headphones for the full Welcome to Amara experience.">
-      </section>
+<section>
+    <section @click.once="login()" class="entrance">
+        <img class="logo" src="@/assets/imgs/s1-wta-icon.png" alt="">
+        <br>
+        <p class="smallTitle">A FANTASY REALM - A PODCAST</p>
+        <h1>A PERFORMANCE</h1>
+        <p>CLICK HERE TO INVESTIGATE AMARA FOR YOURSELF.</p>
+    </section>
+</section>
 </template>
 
 <script>
+
+
     export default {
         name: "introRings",
         methods: {
@@ -20,6 +27,29 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
+.logo {
+    width:300px;
+}
+    .entrance {
+        background-color: var(--background);
+        height:600px;
+        width:700px;
+        margin-top:20px;
+        margin-bottom:20px;
+        display:flex;
+    }
+    p {
+        color:var(--main-color);
+        margin:5px 0 0px 0;
+    }
+    h1, .smallTitle {
+        color: var(--main-color);
+        text-align:center;
+        margin:0 0 0 0;
+    }
+    h1 {
+        font-size:50px;
+    }
 </style>
