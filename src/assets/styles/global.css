@@ -7,8 +7,8 @@
 }
 
 :root {
-    --background: rgba(37, 35, 35, .7);
-    --link-background: rgba(46, 42, 45, 0.7);
+    --background: rgba(37, 35, 35, .5);
+    --link-background: rgba(107, 4, 81, 0.7);
     --main-color:  rgb(255, 0, 128);
 }
 
@@ -29,13 +29,11 @@
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(250, 95, 255);
+    background: hsl(298, 100%, 69%);
   }
 
 .introRings {
-    height:100vh;
     display:flex;
-    justify-content:center;
     flex-direction: column;
     align-items:center;
 }
@@ -55,17 +53,34 @@ body {
 }
 
 /* Clickable Rings on landing page to open main site and activate audio */
+
+.entrance {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    padding:0px;
+    width:700px;
+    height:350px;
+}
+
+.entrance:hover {
+    background-color:var(--link-background);
+    cursor:pointer;
+}
+
 .rings {
-    height:300px;
-    width:300px;
+    height:150px;
+    width:150px;
     cursor: pointer;
     display:flex;
 }
 
 .headphones {
     width:50px;
-
-
+    height:50px;
+    margin:10px;
 }
 
 hr {

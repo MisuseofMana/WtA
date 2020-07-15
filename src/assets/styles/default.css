@@ -1,6 +1,10 @@
 /* Default CSS */
 /* Mobile Portrait Displays */
 
+    #app {
+        overflow-x: hidden;
+    }
+
     /* Floats for images in podcast decription */
     .floatL{float:left; margin:10px 10px 10px 0px}
     .floatR{float:right; margin:10px 0px 10px 10px}
@@ -161,7 +165,7 @@
         background:var(--background);
         z-index:999;
         text-align:center;
-        font-size:12px;
+        font-size:14px;
         display:block;
         padding:20px;
         color:var(--main-color);
@@ -198,6 +202,7 @@
         align-items:center;
         margin:0 auto;
         color:var(--main-color);
+        overflow-x: hidden;
     }
 
     .easter h1 {
