@@ -121,7 +121,7 @@
                 <section>
                   "Welcome to Amara" is a product of "Misuse of Mana LLC" &copy; | No portion of this website or the content it represents may be reproduced in any 
                   manner whatsoever without the express permission from the authors, except in the case of short excerpts used for review. 
-                  | <a href="http://www.seanyager.com" target="_blank"> seanyager.com </a> | Site Updated January 12th 2020
+                  | <a href="http://www.seanyager.com" target="_blank"> seanyager.com </a> | Site Updated July 15th 2020
                   <br>
                   <br>
                     Special thank you to freesound.org user <a href="https://freesound.org/people/trundlefly/" target="_blank">trundlefly</a>, 
