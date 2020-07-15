@@ -1,9 +1,11 @@
 <template>
   <div id="app">
       <transition name="fade" mode="out-in">
-        
-        <!-- Ring intro page -->
-        <ring-intro key="intro" @login="interaction = true" class="introRings" v-if="!this.interaction"></ring-intro>
+        <section v-if="!this.interaction">
+          <media-player /> 
+          <!-- Ring intro page -->
+          <ring-intro key="intro" @login="interaction = true" class="introRings"></ring-intro>
+        </section>
       
         <!-- Main Content -->
         <main-page key="mainPage" 
@@ -22,6 +24,7 @@
 </template>
 
 <script>
+import mediaPlayer from "@/components/mediaPlayer"
 import ringIntro from '@/components/ringIntro';
 import mainPage from '@/components/mainPage';
 import ydnaEasterEgg from '@/components/ydnaEasterEgg';
@@ -39,10 +42,11 @@ import "@/assets/styles/transitions.css";
 export default {
   name: 'WelcomeToAmara',
   components: {
-     ydnaEasterEgg,
-     quenEasterEgg,
-     ringIntro,
-     mainPage,
+    ydnaEasterEgg,
+    quenEasterEgg,
+    ringIntro,
+    mainPage,
+    mediaPlayer,
   },
     metaInfo: {
       title: 'Welcome to Amara',
