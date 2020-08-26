@@ -9,6 +9,8 @@
                 </h1>
               </header>
 
+                
+
               <!-- Main Content of Site - About Amara, and images -->
               <main class="aboutAmara">
                   
@@ -90,32 +92,15 @@
 
                 <section>
                 <p>
-                  <strong>Listen to the podcast before it's released to the public</strong> and help us shape the future of "Welcome to Amara".
-                </p>
-                <p>
-                  <strong>Click this box</strong> to join our growing discord server for early access. 
+                  <strong>Join our Discord Dungeon World community</strong> where you can get more goodies and help us shape the future of <strong>"Welcome to Amara"</strong>.
                 </p>
                 </section>
                   <img src="@/assets/imgs/discord.png" alt="discord icon - click to join our discord">
-              </section>
+                  <p>
+                    <strong>Click this box to join.</strong>
+                  </p>
+                </section>
               </a>
-
-              <footer class="footer">
-                  <section class="socialWrap">
-                  <a href="http://www.twitter.com/misuseofmana" target="_blank">
-                    <img src="@/assets/imgs/twitter.png" alt="twitter icon">
-                  </a>
-                  <a target="_blank" href="http://www.instagram.com/misuseofmana">
-                      <img src="@/assets/imgs/instagram.png" alt="instagram icon">
-                  </a>
-                  <a target="_blank" href="mailto:seanyagerart@gmail.com">
-                    <img src="@/assets/imgs/email.png" alt="email icon">
-                  </a>
-                  <!-- <a target="_blank" href="https://discord.gg/82GpmYD">
-                    <img src="@/assets/imgs/discord.png" alt="discord icon - click to join our discord">
-                  </a> -->
-                  </section>
-              </footer>
 
               <section class="legal">
                 <section>
@@ -157,8 +142,19 @@
                 quenEasterEgg: 'spellbook'
             }
         },
+        
           metaInfo: {
-            title: 'Coming August 12 2020',
+            title: 'Welcome To Amara',
+             meta: [
+              { charset: 'utf-8' },
+              { property:"og:type", content:"website" },
+              { property:"og:image", content:"https://www.welcometoamara.com/s1-wta-icon.jpg" },
+              { property:"og:url", content:"https://www.welcometoamara.com" },
+              { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+              { name:"keywords", content:"Fantasy, Podcast, Drama, Dungeon, World, Dungeon World, Dungeon World Podcast, Welcome, Amara, Story, Storytelling, RPG, Dungeons, Dragons" },
+              { name: 'author', content: 'Sean Yager' },
+              { name: 'og:description', content: '“Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are Sean (The GM) and Andy (Along for the Ride), a GM/Player duo exploring the unique high fantasy world of Amara.'},
+            ],
           },
         name: 'mainPage',
         methods: {
@@ -196,11 +192,11 @@
                 }
             });
         },
-        created: function () {
-            this.mainMusic.volume = 0.3;
-            this.mainMusic.loop = true;
-            this.mainMusic.play();
-        },
+        // created: function () {
+        //     this.mainMusic.volume = 0.3;
+        //     this.mainMusic.loop = true;
+        //     this.mainMusic.play();
+        // },
         destroyed: function () {
             this.mainMusic.pause();
             this.transAudio.volume = 0.3;

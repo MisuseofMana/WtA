@@ -143,7 +143,7 @@
     
     /* Footer Container, Social Icons */
     .footer {
-        grid-row:5/6;
+        grid-row:1/2;
         padding:20px 0px 20px 0px;
         background: var(--background);
     }

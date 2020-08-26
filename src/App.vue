@@ -1,15 +1,11 @@
 <template>
   <div id="app">
       <transition name="fade" mode="out-in">
-        <section v-if="!this.interaction">
-          <media-player /> 
-          <!-- Ring intro page -->
-          <ring-intro key="intro" @login="interaction = true" class="introRings"></ring-intro>
-        </section>
+          <!-- <ring-intro key="intro" @login="interaction = true" class="introRings"></ring-intro> -->
       
         <!-- Main Content -->
         <main-page key="mainPage" 
-        @secretSolve="easter = !easter" v-if="this.interaction && (!this.easter && !this.easterQuen)"
+        @secretSolve="easter = !easter" v-if="(!this.easter && !this.easterQuen)"
         @quenSecretSolve="easterQuen = !easterQuen"
         ></main-page>
 
@@ -24,8 +20,8 @@
 </template>
 
 <script>
-import mediaPlayer from "@/components/mediaPlayer"
-import ringIntro from '@/components/ringIntro';
+
+// import ringIntro from '@/components/ringIntro';
 import mainPage from '@/components/mainPage';
 import ydnaEasterEgg from '@/components/ydnaEasterEgg';
 import quenEasterEgg from '@/components/quenEasterEgg';
@@ -44,9 +40,9 @@ export default {
   components: {
     ydnaEasterEgg,
     quenEasterEgg,
-    ringIntro,
+    // ringIntro,
     mainPage,
-    mediaPlayer,
+
   },
     metaInfo: {
       title: 'Welcome to Amara',
