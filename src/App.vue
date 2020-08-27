@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <transition name="fade" mode="out-in">
+      <!-- <transition name="fade" mode="out-in"> -->
           <!-- <ring-intro key="intro" @login="interaction = true" class="introRings"></ring-intro> -->
       
         <!-- Main Content -->
@@ -15,7 +15,7 @@
         <!-- Another Secret -->
         <quen-easter-egg key="easter" @backHome="easterQuen = !easterQuen" v-if="this.easterQuen"></quen-easter-egg>
 
-      </transition>
+      <!-- </transition> -->
   </div>
 </template>
 
@@ -65,5 +65,19 @@ export default {
     }
   },
 }
-
 </script>
+
+<style>
+/* DEFAULT STYLES */
+
+/* TABLET STYLES */
+@media (min-width: 768px) {
+
+}
+
+/* MOBILE PORTRAIT MODE */
+@media (min-width: 667px) {
+
+}
+</style>
+
