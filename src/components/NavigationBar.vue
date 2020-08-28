@@ -34,6 +34,10 @@
  /* Footer Container, Social Icons */
     .navBar {
     }
+
+    .navBar p {
+        display:none;
+    }
     
     /* Inner Wrapper for Social Icons */
     .socialWrap {
@@ -44,7 +48,7 @@
 
     /* Controls image size of Social Icons */
     .socialWrap img {
-        width:75px;
+        width:50px;
     }
 
     .socialWrap a:hover {
@@ -67,6 +71,10 @@
    /* Footer Container, Social Icons */
    .navBar {
    }
+
+   .navBar p {
+        display:block;
+    }
    
    /* Inner Wrapper for Social Icons */
    .socialWrap {

@@ -4,13 +4,13 @@
             <img src="@/assets/imgs/s1-wta-icon.png" alt="">
         </section>
 
-        <section>
+        <section class="content">
             <h1>
                 Season One is out now! 
             </h1>
 
             <h2>
-                Episodes relese every Wednesday!
+                Episodes release every Wednesday!
             </h2>    
             
             <hr>
@@ -48,7 +48,19 @@
 </script>
 
 <style scoped>
-.infoWrap {
+
+.content h1 {
+    text-align:center;
+    font-size:20px;
+}
+
+.content h2 {
+    font-size:14px;
+    text-align:center;
+}
+
+.content p {
+    text-align:center;
 }
 
 .infoWrap img {
@@ -58,7 +70,31 @@
     float:left;
 }
 
-.infoWrap h1 {
+@media (min-width: 667px) {
+.content h1 {
     font-size:30px;
+    text-align:left;
+}
+
+.content h2 {
+    font-size:20px;
+    text-align:left;
+}
+
+.content p {
+    text-align:left;
+}
+
+}
+
+/* TABLET STYLES */
+@media (min-width: 768px) {
+.content h1 {
+    font-size:40px;
+}
+
+.content h2 {
+    font-size:30px;
+}
 }
 </style>

@@ -16,7 +16,7 @@
 /* DEFAULT STYLES - MOBILE SITE */
 .headerText {
     display:block;
-    font-size:24px;
+    font-size:12px;
     background: var(--background);
     color:var(--main-color);
     text-align: center;
@@ -24,20 +24,20 @@
 
 h1 {
     margin:0;
-    font-size:3em;
+    font-size:2em;
 }
 
 /* MOBILE PORTRAIT MODE */
 @media (min-width: 667px) {
     .headerText {
-        font-size:20px;
+        font-size:15px;
     }
 }
 
 /* TABLET STYLES */
 @media (min-width: 768px) {
     .headerText {
-       font-size:25px;
+       font-size:19px;
    }
 }
 </style>

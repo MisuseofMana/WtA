@@ -1,5 +1,6 @@
 <template>
     <section class="overlayWrapper blockDarker">
+        <h1>Type</h1>
         <div key="secretBox" class="easterout"> {{ secret }} </div>
     </section>
 </template>
@@ -39,11 +40,9 @@
                 await delay(1000);
                 if (check == this.easteregg) {
                         this.$emit('secretSolve');
-                        console.log('YDNA')
                     }
                 else if (check == this.quenEasterEgg) {
                     this.$emit('quenSecretSolve');
-                    console.log('QUEN')
                 }
             }
         },
@@ -77,6 +76,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border: solid 5px rgb(255, 89, 200);
+    }
+
+    .overlayWrapper h1 {
+        font-size:50px;
+        margin-top:20px;
+        text-align:center;
+        color:#F3B808;
     }
 
     /* Controls the runes size in the footer */

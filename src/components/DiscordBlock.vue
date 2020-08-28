@@ -49,9 +49,13 @@
         padding:0 20px
     }
 
+    .discordLink h2 {
+        font-size:15px;
+    }
+
     /* Changes size of discord icon image */
     .discordLink img {
-        width:100px;
+        width:50px;
         padding:0 20px;
     }
     

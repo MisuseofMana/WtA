@@ -138,7 +138,7 @@ export default {
 }
 
 .rings {
-  display:flex;
+  display:none;
   justify-content: center;
   margin-bottom:100px;
 }
@@ -171,6 +171,10 @@ export default {
        background-image:url('./assets/imgs/mobileBackground.png');
        background-repeat: repeat-y;
        background-size: cover;
+   }
+
+   .rings {
+     display:flex;
    }
 
   .gridCont {
