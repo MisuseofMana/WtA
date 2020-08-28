@@ -6,6 +6,7 @@
             <div class="main" key="main" v-if="!easterYdna && !easterQuen">
               <section class="gridCont">
                 <header-block/>
+                <podcast-links/>
                 <navigation-bar/>
                 <discord-block/>
                 <intro-block/>
@@ -57,6 +58,7 @@ import NavigationBar from "@/components/NavigationBar"
 import LegalStuff from "@/components/LegalStuff"
 import OverlayBlock from "@/components/OverlayBlock"
 import AudioPlayer from "@/components/AudioPlayer"
+import PodcastLinks from "@/components/PodcastLinks"
 
 import "@/assets/styles/global.css";
 import "@/assets/styles/default.css";
@@ -76,7 +78,8 @@ export default {
     NavigationBar,
     LegalStuff,
     OverlayBlock,
-    AudioPlayer
+    AudioPlayer,
+    PodcastLinks
 
   },
     metaInfo: {

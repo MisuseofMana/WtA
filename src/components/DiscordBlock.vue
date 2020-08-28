@@ -2,9 +2,9 @@
     <a class="discordLinkWrap" href="https://discord.gg/82GpmYD">
         <section class="discordLink">
             <section>
-                <p>
+                <h2>
                     Join our <strong>Dungeon World community</strong> where you can get more goodies and help us shape the future of <strong>"Welcome to Amara"</strong>.
-                </p>
+                </h2>
 
                 <p>
                     <strong>Click this box to visit our Discord.</strong>
