@@ -8,7 +8,7 @@
             </p>
             
             <p>
-                Site Updated July 15th 2020
+                Site Updated August 28th 2020
             </p>
         
             <p>
