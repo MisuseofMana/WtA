@@ -90,7 +90,7 @@ export default {
       meta: [
         { charset: 'utf-8' },
         { property:"og:type", content:"website" },
-        { property:"og:image", content:"https://www.welcometoamara.com/s1-wta-icon.jpg" },
+        { property:"og:image", content:require("@/assets/imgs/s1-wta-icon.png") },
         { property:"og:url", content:"https://www.welcometoamara.com" },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name:"keywords", content:"Fantasy, Podcast, Drama, Dungeon, World, Dungeon World, Dungeon World Podcast, Welcome, Amara, Story, Storytelling, RPG, Dungeons, Dragons" },
