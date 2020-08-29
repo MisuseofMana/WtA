@@ -94,44 +94,6 @@ export default {
       logo: require('@/assets/imgs/s1-wta-icon.png')
     }
   },
-  metaInfo() {
-    return {
-      title: 'Welcome to Amara',
-      meta: [
-        { charset: 'utf-8' },
-        
-        {name: 'twitter:card', content: '“Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign.'},
-        {name: 'twitter:title', content: 'Welcome to Amara - The Podcast'},
-        {name: 'twitter:description', content: 'Welcome To Amara website, click to discover more of Amara.'},
-
-        {name: 'twitter:image', content: this.logo},
-
-        {property: 'og:title', content: 'Welcome to Amara - The Podcast'},
-        {property: 'og:site_name', content: '“Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign.'},
-
-        {itemprop: 'name', content: 'Welcome to Amara - The Podcast'},
-        {itemprop: 'description', content: '“Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are Sean (The GM) and Andy (Along for the Ride), a GM/Player duo exploring the unique high fantasy world of Amara.'},
-        {itemprop: 'image', content: this.logo},
-        
-        
-        {property: 'og:type', content: 'website'},
-        {property: 'og:image', content:  this.logo},
-        {property: 'og:description', content: 'Welcome To Amara website, click to discover more of Amara.'},
-
-        { property:"og:title", content:"Welcome to Amara - The Podcast" },
-        { property:"og:type", content:"website" },
-        { property:"og:image", content: this.logo },
-
-
-        { property:"og:url", content:"https://www.welcometoamara.com" },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { property:"keywords", content:"Fantasy, Podcast, Drama, Dungeon, World, Dungeon World, Dungeon World Podcast, Welcome, Amara, Story, Storytelling, RPG, Dungeons, Dragons" },
-        { property: 'author', content: 'Sean Yager' },
-        { name: 'description', content: '“Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are Sean (The GM) and Andy (Along for the Ride), a GM/Player duo exploring the unique high fantasy world of Amara.'},
-        { property: 'og:description', content: '“Welcome to Amara” is a high production dramatic retelling podcast of a play by post Dungeon World campaign. We are Sean (The GM) and Andy (Along for the Ride), a GM/Player duo exploring the unique high fantasy world of Amara.'},
-      ],
-    }
-  },
   methods:{
     reveal(who){
       if(who === "Ydna"){
