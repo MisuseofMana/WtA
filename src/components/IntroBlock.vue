@@ -9,29 +9,28 @@
                 Season One is out now! 
             </h1>
 
+
             <h2>
-                Episodes release every Wednesday!
+                <span class="tick">E</span>pisodes release every Wed<span class="tick">n</span>esday!
             </h2>    
             
             <hr>
 
             <h2>
-                We are Sean and Andy, a GM/Player duo exploring the unique high fantasy world of Amara.
+                We are Sean and Andy, a GM/Player duo exploring <span class="tick">t</span>h<span class="tick">e</span> unique high fantasy wo<span class="tick">r</span>ld of Amara.
             </h2> 
             
 
             <p>
-                "Welcome to Amara" the podcast, is a sword and sorcery high production dramatic retelling of a play by post Dungeon World campaign.  It's a realm with carefully crafted lore to uncover, featuring a growing cast of diverse characters of fast friends, malignatnt baddies and beasts alike.
+                "Welcome <span class="tick">t</span>o Amara" t<span class="tick">h</span>e podcast, is a sword and sorc<span class="tick">e</span>ry h<span class="tick">i</span>gh productio<span class="tick">n</span> dramatic retelling of a play by post Dungeon World campaign.  It'<span class="tick">s</span> a realm wi<span class="tick">t</span>h ca<span class="tick">r</span>efully crafted lore to <span class="tick">u</span>ncover, featuring a growing cast of diverse characters of fast friends, <span class="tick">m</span>alignant baddi<span class="tick">e</span>s a<span class="tick">n</span>d beas<span class="tick">t</span>s alike.
             </p>
 
             <p>
-                Eyien is where we begin, it’s the place to be for security and for power in Amara. Within Eyien resides a group of swordsmen, mages, and varlets, known as “The Coterie”. Along the way we discover, and breath in the city of Eyien. We uncover supressed and guarded secrets that threaten the kingdom's safety. 
+                Eyien is where we begin, it’s the place to be for <span class="tick">s</span>ecurity and for power in Amara. Within Eyien resides a group of swordsmen, mages, and varlets, known as “The Coterie”. Along the way we discover, and breathe in the city of Eyien. We uncover supressed and guarded secrets that threaten the kingdom's safety. 
             </p>
 
-
-
             <p>
-                Relax and share in our discover as you immerse yourself into our world. Listen to us piece together the mysterious forces surrounding this grand city of opportunity and potential.
+                Relax and share in our discovery as you immerse yourself into our world. Listen to us piece together the mysterious forces surrounding this grand city of opportunity and potential.
             </p>
 
             <h2>See you in Amara,</h2>
@@ -60,6 +59,7 @@
 }
 
 .content p {
+    font-size:22px;
     text-align:center;
 }
 
@@ -68,6 +68,23 @@
     padding:10px 20px;
     margin: 0 auto;
     float:left;
+}
+
+.tick {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+}
+.tick::before {
+    content: '.';
+    white-space: nowrap;
+    display: inline-block;
+    position: absolute;
+    bottom: -0.2em;
+    font-size:8px;
+    left: 0;
+    text-align: center;
+    width: 100%;
 }
 
 @media (min-width: 667px) {
