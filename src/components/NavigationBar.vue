@@ -1,7 +1,7 @@
 <template>
     <footer class="navBar block">
         <section class="socialWrap">
-        <a href="http://www.twitter.com/misuseofmana" target="_blank">
+        <a href="http://www.twitter.com/WelcometoAmara" target="_blank">
             <p>Twitter</p>
             <img src="@/assets/imgs/twitter.png" alt="twitter icon">
         </a>
